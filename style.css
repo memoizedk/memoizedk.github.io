@@ -9,7 +9,7 @@ body {
     font-family: 'Fira Code', monospace;
     color: white;
     min-height: 100vh;
-    padding: 2rem 15rem;
+    padding: 2rem 5rem;
 }
 
 .container {
@@ -131,18 +131,22 @@ body {
 
         @media (max-width: 768px) {
             body {
-                padding: 1rem 2rem;
+                padding: 1rem;
             }
             
             .container {
                 min-height: calc(100vh - 2rem);
-                padding: 0 1rem;
+                padding: 0;
+                max-width: 100%;
             }
             
             .portfolio-content {
                 grid-template-columns: 1fr;
-                text-align: center;
                 gap: 2rem;
+            }
+            
+            .profile-section {
+                text-align: center;
             }
             
             .content-section {
@@ -150,6 +154,7 @@ body {
                 border-top: 2px solid #333;
                 padding-left: 0;
                 padding-top: 2rem;
+                text-align: left;
             }
             
             .profile-name {
@@ -161,7 +166,24 @@ body {
             }
         }
 
-        @media (max-width: 1024px) {
+        /* Desktop styles */
+        @media (min-width: 1201px) {
+            body {
+                padding: 2rem 15rem;
+            }
+            
+            .container {
+                padding: 0 2rem;
+            }
+            
+            .portfolio-content {
+                justify-self: center;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
             body {
                 padding: 2rem 8rem;
             }
@@ -171,7 +193,7 @@ body {
             }
         }
 
-        @media (max-width: 1200px) {
+        @media (min-width: 1025px) and (max-width: 1200px) {
             body {
                 padding: 2rem 10rem;
             }
