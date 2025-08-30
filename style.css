@@ -9,7 +9,7 @@ body {
     font-family: 'Fira Code', monospace;
     color: white;
     min-height: 100vh;
-    padding: 2rem 8rem;
+    padding: 2rem 15rem;
 }
 
 .container {
@@ -19,13 +19,13 @@ body {
     min-height: calc(80vh - 4rem);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 2.5rem;
 }
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 3rem;
+    grid-template-columns: 200px 1fr;
+    gap: 0;
     align-items: stretch;
     width: 100%;
 }
@@ -36,11 +36,12 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding-right: 0rem;
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-image: url('pfp.jpg');
     background-size: cover;
@@ -62,8 +63,8 @@ body {
 }
 
 .profile-name {
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 0.90rem;
+    font-weight: 250;
     margin-bottom: 1.4rem;
     color: white;
 }
@@ -81,8 +82,8 @@ body {
 }
 
 .social-link {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
     background: #222;
     border-radius: 8px;
     display: flex;
@@ -90,7 +91,7 @@ body {
     justify-content: center;
     color: #888;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 
@@ -101,7 +102,7 @@ body {
 }
 
 .content-section {
-    padding-left: 3rem;
+    padding-left: 3.5rem;
     border-left: 2px solid #333;
     display: flex;
     flex-direction: column;
@@ -118,8 +119,8 @@ body {
 }
 
 .profile-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    line-height: 1.7;
     color: #ccc;
 }
 
@@ -162,7 +163,7 @@ body {
 
         @media (max-width: 1024px) {
             body {
-                padding: 2rem 5rem;
+                padding: 2rem 8rem;
             }
             
             .container {
@@ -172,7 +173,7 @@ body {
 
         @media (max-width: 1200px) {
             body {
-                padding: 2rem 6rem;
+                padding: 2rem 10rem;
             }
             
             .container {
