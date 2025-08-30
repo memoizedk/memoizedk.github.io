@@ -1,1 +1,0 @@
-# memoizedk.github.io
