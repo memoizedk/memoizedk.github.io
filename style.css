@@ -1,41 +1,41 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
     background-color: #000;
     font-family: 'Fira Code', monospace;
     color: white;
     min-height: 100vh;
-    padding: 2rem;
+    padding: 2rem 8rem;
 }
 
-/* Container for centering content */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 4rem);
+    min-height: calc(80vh - 4rem);
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
-/* Main portfolio content */
 .portfolio-content {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
 }
 
-/* Profile section (left side) */
 .profile-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .profile-pic {
@@ -51,20 +51,20 @@ body {
     justify-content: center;
     font-size: 3rem;
     font-weight: bold;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1rem;
     color: white;
     border: 3px solid #333;
     transition: border-color 0.3s ease;
 }
 
 .profile-pic:hover {
-    border-color: #64ffda;
+    border-color:#bc4f0fc9;
 }
 
 .profile-name {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 1.4rem;
     color: white;
 }
 
@@ -100,15 +100,19 @@ body {
     transform: translateY(-2px);
 }
 
-/* Content section (right side) */
 .content-section {
     padding-left: 3rem;
     border-left: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .section-title {
     font-size: 1.5rem;
-    color: #64ffda;
+    /* color: #6ec3af; */
+    color: #de5d12;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
@@ -124,34 +128,54 @@ body {
     font-weight: 500;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    body {
-        padding: 1rem;
-    }
-    
-    .container {
-        min-height: calc(100vh - 2rem);
-    }
-    
-    .portfolio-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
-    }
-    
-    .content-section {
-        border-left: none;
-        border-top: 2px solid #333;
-        padding-left: 0;
-        padding-top: 2rem;
-    }
-    
-    .profile-name {
-        font-size: 2rem;
-    }
-    
-    .section-title {
-        font-size: 1.3rem;
-    }
-}
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 2rem;
+            }
+            
+            .container {
+                min-height: calc(100vh - 2rem);
+                padding: 0 1rem;
+            }
+            
+            .portfolio-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .content-section {
+                border-left: none;
+                border-top: 2px solid #333;
+                padding-left: 0;
+                padding-top: 2rem;
+            }
+            
+            .profile-name {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                padding: 2rem 5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                padding: 2rem 6rem;
+            }
+            
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
